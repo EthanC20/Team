@@ -2,7 +2,7 @@
 import FooterVue from '../components/footer.vue';
 import HeaderVue from '../components/header.vue';
 import MyLive2d from '../components/myLive2d.vue';
-import flingLine from '../components/FlingLine.vue';
+import FlingLine from '../components/FlingLine.vue';
 
 import MainVue from './homepart/main.vue';
 </script>
@@ -18,8 +18,7 @@ import MainVue from './homepart/main.vue';
       <!-- 主体 -->
       <el-main>
         <MainVue class="body"></MainVue>
-        <flingLine></flingLine>
-
+        <FlingLine/>
       </el-main>
       <!-- 底部 -->
       <FooterVue class="footer"></FooterVue>
