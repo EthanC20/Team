@@ -1,13 +1,10 @@
 <template>
-
     <div class="container">
-
         <!-- 这里放队员名片 -->
         <div class="card">
             <div class="imgBx">
                 <img src="@/assets/avatar/img1.jpg" />
             </div>
-
             <div class="content">
                 <!-- // 花名 -->
                 <h2>Joel Forger</h2>
@@ -32,111 +29,43 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img2.jpg" />
-            </div>
-
-            <div class="content">
-                <h2>Anya Forger</h2>
-
-                <p>
-                    One of the protagonists of this work. A girl with superpowers who
-                    can read minds to others. In order to enter Eden Academy, he falsely
-                    claimed to be 6 years old, but the actual age should be about 4 or 5
-                    years old.
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img2.jpg" />
-            </div>
-
-            <div class="content">
-                <h2>Anya Forger</h2>
-
-                <p>
-                    One of the protagonists of this work. A girl with superpowers who
-                    can read minds to others. In order to enter Eden Academy, he falsely
-                    claimed to be 6 years old, but the actual age should be about 4 or 5
-                    years old.
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img2.jpg" />
-            </div>
-
-            <div class="content">
-                <h2>Anya Forger</h2>
-
-                <p>
-                    One of the protagonists of this work. A girl with superpowers who
-                    can read minds to others. In order to enter Eden Academy, he falsely
-                    claimed to be 6 years old, but the actual age should be about 4 or 5
-                    years old.
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img2.jpg" />
-            </div>
-
-            <div class="content">
-                <h2>Anya Forger</h2>
-
-                <p>
-                    One of the protagonists of this work. A girl with superpowers who
-                    can read minds to others. In order to enter Eden Academy, he falsely
-                    claimed to be 6 years old, but the actual age should be about 4 or 5
-                    years old.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img2.jpg" />
-            </div>
-
-            <div class="content">
-                <h2>Anya Forger</h2>
-
-                <p>
-                    One of the protagonists of this work. A girl with superpowers who
-                    can read minds to others. In order to enter Eden Academy, he falsely
-                    claimed to be 6 years old, but the actual age should be about 4 or 5
-                    years old.
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img2.jpg" />
-            </div>
-
-            <div class="content">
-                <h2>Anya Forger</h2>
-
-                <p>
-                    One of the protagonists of this work. A girl with superpowers who
-                    can read minds to others. In order to enter Eden Academy, he falsely
-                    claimed to be 6 years old, but the actual age should be about 4 or 5
-                    years old.
-                </p>
-            </div>
-        </div>
+        <MemberCard 
+        v-for="(member, index) in members" 
+        :key="index" 
+        :member="member"
+        class="member-item"
+      />
     </div>
 </template>
 
+
+<script>
+import MemberCard from '../../components/MemberCard.vue';
+
+export default {
+  components: { MemberCard },
+  props: {
+    title: {
+      type: String,
+      default: '团队成员'
+    }
+  },
+  data() {
+    return {
+      members: []
+    };
+  },
+  async created() {
+    try {
+      const response = await fetch('../../data/members.json');
+      this.members = await response.json();
+    } catch (error) {
+      console.error('加载成员数据失败:', error);
+      // 可以在这里设置默认数据或显示错误信息
+    }
+  }
+}
+</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");

@@ -2,7 +2,7 @@
 import FooterVue from '../components/footer.vue';
 import HeaderVue from '../components/header.vue';
 import MyLive2d from '../components/myLive2d.vue';
-import flingLine from '../components/flingLine.vue';
+import flingLine from '../components/FlingLine.vue';
 
 import MainVue from './awards/main.vue';
 </script>
