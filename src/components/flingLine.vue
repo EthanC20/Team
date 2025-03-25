@@ -33,7 +33,7 @@ const particlesLoaded = async container => {
             size: 40
           },
           push: {
-            quantity: 4
+            quantity: 0
           },
           repulse: {
             distance: 200,

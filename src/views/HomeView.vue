@@ -46,15 +46,6 @@ body {
 }
 
 
-/* 内容部分样式 */
-.content {
-  position: relative;
-  z-index: 1;
-  /* 确保内容在视频上层 */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
 /* Header 样式 */
 .header {

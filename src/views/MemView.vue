@@ -17,7 +17,7 @@ import RightPart from './mem/rightPart.vue';
       <!-- 头部 -->
       <HeaderVue class="header"></HeaderVue>
       <el-main>
-        <div>
+        <div class="layout-main">
           <LeftPart class="leftPart"></LeftPart>
           <RightPart class="rightPart"></RightPart>
         </div>
@@ -29,13 +29,6 @@ import RightPart from './mem/rightPart.vue';
 </template>
 
 <style scoped>
-html,
-leftPart {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  /* 禁止滚动条 */
-}
 
 .container {
   position: relative;
@@ -43,19 +36,9 @@ leftPart {
   /* 确保容器高度占满屏幕 */
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 
-/* 内容区域样式 */
-.content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  /* 确保内容位于视频上面 */
-}
 
 /* 主体部分自适应剩余高度 */
 el-main {
@@ -73,17 +56,24 @@ el-main {
   height: 60px;
 }
 
-/* Footer 样式 */
-.footer {
-  flex: 0 0 auto;
-  background-color: transparent;
-  height: 60px;
-}
+
 
 /* 主体样式 */
 .leftPart {
   float: left;
   /* 主体区域自动填充剩余空间 */
   position: relative;
+  overflow: auto;
+  min-width: 0;
+}
+
+.layout-main {
+  position: relative;
+  height: 100%;
+  /* 确保容器高度占满屏幕 */
+  display: flex;
+  flex-direction: row;
+  min-width: 0; /* 关键：允许flex项目收缩 */
+  overflow: auto;
 }
 </style>

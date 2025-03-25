@@ -176,14 +176,14 @@
 .container {
     float: left;
     position: relative;
-    width: 1100px;
+    width: 62%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     /* 改为顶部对齐 */
     flex-wrap: wrap;
-    padding: 30px;
-    margin-top: -40px;
+    padding: 10px;
+    margin-top: 100px;
     /* 给容器上方留点空间 */
 }
 
@@ -194,16 +194,18 @@
     border-radius: 20px;
     height: 215px;
     background: rgba(255, 255, 255, 1);
-    margin: 30px 10px;
+    margin: 10px 10px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .container .card:hover {
     height: 420px;
+    
 }
 
 .container .card .imgBx {

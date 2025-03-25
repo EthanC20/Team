@@ -30,6 +30,10 @@ import { ElTooltip } from "element-plus";
   align-items: center;
   height: 60px;
   padding-right: 40px;
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  right:0;
 }
 
 .mask {

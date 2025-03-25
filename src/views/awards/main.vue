@@ -56,6 +56,7 @@
     overflow-y: auto; /* 启用垂直滚动 */
     height: 100%; /* 填满 body 的高度 */
     box-sizing: border-box; /* 包含内边距和边框 */
+    padding-bottom: 80px;
   }
   
   /* 比赛条目样式 */

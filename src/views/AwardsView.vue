@@ -29,13 +29,6 @@ import MainVue from './awards/main.vue';
 </template>
 
 <style scoped>
-html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  /* 禁止滚动条 */
-}
 
 .container {
   position: relative;
@@ -45,17 +38,9 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-
-
 /* 内容样式 */
-.content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 10;
-  /* 确保内容在视频上方 */
-}
+
+
 
 /* 主体部分自适应剩余高度 */
 el-main {
@@ -78,12 +63,5 @@ el-main {
   flex: 0 0 auto;
   background-color: transparent;
   height: 60px;
-}
-
-/* 主体样式 */
-.body {
-  flex: 1;
-  /* 主体区域自动填充剩余空间 */
-  position: relative;
 }
 </style>
