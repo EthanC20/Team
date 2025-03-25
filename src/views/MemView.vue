@@ -11,11 +11,11 @@ import RightPart from './mem/rightPart.vue';
 <template>
   <MyLive2d></MyLive2d>
   <div class="container">
-    <!-- 视频背景 -->
     <!-- 内容 -->
     <div class="content">
       <!-- 头部 -->
       <HeaderVue class="header"></HeaderVue>
+      <!-- 主体 -->
       <el-main>
         <div class="layout-main">
           <LeftPart class="leftPart"></LeftPart>
@@ -23,57 +23,82 @@ import RightPart from './mem/rightPart.vue';
         </div>
         <flingLine></flingLine>
       </el-main>
+      <!-- 底部 -->
       <FooterVue class="footer"></FooterVue>
     </div>
   </div>
 </template>
 
 <style scoped>
+/* 基础样式重置 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
 .container {
-  position: relative;
-  height: 100%;
-  /* 确保容器高度占满屏幕 */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
+/* 内容区域 */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
 
-
-/* 主体部分自适应剩余高度 */
+/* Element Plus 的 el-main 样式 */
 el-main {
   flex: 1;
-  /* 主体部分占用剩余空间 */
   display: flex;
-  /* 保证内容居中对齐时有效 */
+  flex-direction: column;
+  min-height: 0;
+  padding: 0; /* 移除默认内边距 */
 }
 
-/* Header 样式 */
-.header {
-  flex: 0 0 auto;
-  /* 头部固定高度 */
-  background-color: transparent;
-  height: 60px;
-}
-
-
-
-/* 主体样式 */
-.leftPart {
-  float: left;
-  /* 主体区域自动填充剩余空间 */
-  position: relative;
-  overflow: auto;
-  min-width: 0;
-}
-
+/* 主布局 */
 .layout-main {
-  position: relative;
-  height: 100%;
-  /* 确保容器高度占满屏幕 */
+  flex: 1;
   display: flex;
-  flex-direction: row;
-  min-width: 0; /* 关键：允许flex项目收缩 */
-  overflow: auto;
+  min-height: 0;
+  overflow: hidden; /* 防止内部溢出 */
+}
+
+/* 左侧部分 */
+.leftPart {
+  flex: 0 0 62%; /* 固定62%宽度 */
+  min-width: 0; /* 允许内容收缩 */
+  border: 2px solid rgb(35, 212, 94);
+  overflow: auto; /* 如果需要滚动 */
+  padding:10px;
+}
+
+/* 右侧部分 */
+.rightPart {
+  flex: 0 0 38%; /* 固定38%宽度 */
+  min-width: 0;
+  border: 1px solid rgba(2, 48, 199, 0.938);
+  overflow: auto; /* 如果需要滚动 */
+}
+
+/* 头部样式 */
+.header {
+  flex-shrink: 0;
+  height: 60px;
+  background-color: transparent;
+}
+
+/* 底部样式 */
+.footer {
+  flex-shrink: 0;
+  height: 60px;
+  background-color: transparent;
 }
 </style>

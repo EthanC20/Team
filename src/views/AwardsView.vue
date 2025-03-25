@@ -32,7 +32,7 @@ import MainVue from './awards/main.vue';
 
 .container {
   position: relative;
-  height: 100%;
+  height: 100vh;
   /* 确保容器高度占满屏幕 */
   display: flex;
   flex-direction: column;

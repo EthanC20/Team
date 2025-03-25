@@ -174,14 +174,10 @@
 }
 
 .container {
-    float: left;
-    position: relative;
-    width: 62%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     /* 改为顶部对齐 */
     flex-wrap: wrap;
+    gap:20px;
     padding: 10px;
     margin-top: 100px;
     /* 给容器上方留点空间 */

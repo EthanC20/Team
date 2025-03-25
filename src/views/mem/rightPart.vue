@@ -24,7 +24,6 @@ export default {
 <style scoped>
 .rightPart {
     margin-top: 100px;
-    width: 38%;
     display: grid;
     /* 启用 Grid 布局 */
     grid-template-columns: auto 1fr;
@@ -33,13 +32,6 @@ export default {
     /* 图片和文字之间的间距 */
     align-items: start;
     /* 让图片和文字顶部对齐 */
-}
-
-.rightPart img {
-    max-width: 200px;
-    /* 控制图片的最大宽度 */
-    height: auto;
-    /* 保持图片比例 */
 }
 
 .rightPart p {

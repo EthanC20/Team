@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
   /* 确保 container 占满整个网页 */
   display: flex;
   flex-direction: column;
