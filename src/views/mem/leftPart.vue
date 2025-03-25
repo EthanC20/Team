@@ -1,143 +1,140 @@
 <template>
 
-    <head></head>
+    <div class="container">
 
-    <body>
-        <div class="container">
-
-            <!-- 这里放队员名片 -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img1.jpg" />
-                </div>
-
-                <div class="content">
-                    <!-- // 花名 -->
-                    <h2>Joel Forger</h2>
-                    <!-- github 或者 blog 链接 -->
-                    <div class="link">
-                        <a target="_blank" href="https://space.bilibili.com/3546725136468673?spm_id_from=333.1007.0.0"
-                            class="github">
-                            <img src="../../assets/bg/github.png" width="28px" height="28px" />
-                        </a>
-
-                        <a target="_blank" href="https://space.bilibili.com/3546725136468673?spm_id_from=333.1007.0.0"
-                            class="blog">
-                            <img src="../../assets/bg/blog.png" width="28px" height="28px" />
-                        </a>
-                    </div>
-                    <!-- 简介 -->
-                    <p>
-                        Formerly known as Blair, 27 years old. Favorite food is apples and I
-                        hate bugs.
-                    </p>
-                </div>
+        <!-- 这里放队员名片 -->
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img1.jpg" />
             </div>
 
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img2.jpg" />
+            <div class="content">
+                <!-- // 花名 -->
+                <h2>Joel Forger</h2>
+                <h3>Crypto</h3>
+                <!-- github 或者 blog 链接 -->
+                <div class="link">
+                    <a target="_blank" href="https://space.bilibili.com/3546725136468673?spm_id_from=333.1007.0.0"
+                        class="github">
+                        <img src="../../assets/bg/github.png" width="28px" height="28px" />
+                    </a>
+
+                    <a target="_blank" href="https://space.bilibili.com/3546725136468673?spm_id_from=333.1007.0.0"
+                        class="blog">
+                        <img src="../../assets/bg/blog.png" width="28px" height="28px" />
+                    </a>
                 </div>
-
-                <div class="content">
-                    <h2>Anya Forger</h2>
-
-                    <p>
-                        One of the protagonists of this work. A girl with superpowers who
-                        can read minds to others. In order to enter Eden Academy, he falsely
-                        claimed to be 6 years old, but the actual age should be about 4 or 5
-                        years old.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img2.jpg" />
-                </div>
-
-                <div class="content">
-                    <h2>Anya Forger</h2>
-
-                    <p>
-                        One of the protagonists of this work. A girl with superpowers who
-                        can read minds to others. In order to enter Eden Academy, he falsely
-                        claimed to be 6 years old, but the actual age should be about 4 or 5
-                        years old.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img2.jpg" />
-                </div>
-
-                <div class="content">
-                    <h2>Anya Forger</h2>
-
-                    <p>
-                        One of the protagonists of this work. A girl with superpowers who
-                        can read minds to others. In order to enter Eden Academy, he falsely
-                        claimed to be 6 years old, but the actual age should be about 4 or 5
-                        years old.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img2.jpg" />
-                </div>
-
-                <div class="content">
-                    <h2>Anya Forger</h2>
-
-                    <p>
-                        One of the protagonists of this work. A girl with superpowers who
-                        can read minds to others. In order to enter Eden Academy, he falsely
-                        claimed to be 6 years old, but the actual age should be about 4 or 5
-                        years old.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img2.jpg" />
-                </div>
-
-                <div class="content">
-                    <h2>Anya Forger</h2>
-
-                    <p>
-                        One of the protagonists of this work. A girl with superpowers who
-                        can read minds to others. In order to enter Eden Academy, he falsely
-                        claimed to be 6 years old, but the actual age should be about 4 or 5
-                        years old.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="@/assets/avatar/img2.jpg" />
-                </div>
-
-                <div class="content">
-                    <h2>Anya Forger</h2>
-
-                    <p>
-                        One of the protagonists of this work. A girl with superpowers who
-                        can read minds to others. In order to enter Eden Academy, he falsely
-                        claimed to be 6 years old, but the actual age should be about 4 or 5
-                        years old.
-                    </p>
-                </div>
+                <!-- 简介 -->
+                <p>
+                    Formerly known as Blair, 27 years old. Favorite food is apples and I
+                    hate bugs.
+                </p>
             </div>
         </div>
-    </body>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img2.jpg" />
+            </div>
+
+            <div class="content">
+                <h2>Anya Forger</h2>
+
+                <p>
+                    One of the protagonists of this work. A girl with superpowers who
+                    can read minds to others. In order to enter Eden Academy, he falsely
+                    claimed to be 6 years old, but the actual age should be about 4 or 5
+                    years old.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img2.jpg" />
+            </div>
+
+            <div class="content">
+                <h2>Anya Forger</h2>
+
+                <p>
+                    One of the protagonists of this work. A girl with superpowers who
+                    can read minds to others. In order to enter Eden Academy, he falsely
+                    claimed to be 6 years old, but the actual age should be about 4 or 5
+                    years old.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img2.jpg" />
+            </div>
+
+            <div class="content">
+                <h2>Anya Forger</h2>
+
+                <p>
+                    One of the protagonists of this work. A girl with superpowers who
+                    can read minds to others. In order to enter Eden Academy, he falsely
+                    claimed to be 6 years old, but the actual age should be about 4 or 5
+                    years old.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img2.jpg" />
+            </div>
+
+            <div class="content">
+                <h2>Anya Forger</h2>
+
+                <p>
+                    One of the protagonists of this work. A girl with superpowers who
+                    can read minds to others. In order to enter Eden Academy, he falsely
+                    claimed to be 6 years old, but the actual age should be about 4 or 5
+                    years old.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img2.jpg" />
+            </div>
+
+            <div class="content">
+                <h2>Anya Forger</h2>
+
+                <p>
+                    One of the protagonists of this work. A girl with superpowers who
+                    can read minds to others. In order to enter Eden Academy, he falsely
+                    claimed to be 6 years old, but the actual age should be about 4 or 5
+                    years old.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="@/assets/avatar/img2.jpg" />
+            </div>
+
+            <div class="content">
+                <h2>Anya Forger</h2>
+
+                <p>
+                    One of the protagonists of this work. A girl with superpowers who
+                    can read minds to others. In order to enter Eden Academy, he falsely
+                    claimed to be 6 years old, but the actual age should be about 4 or 5
+                    years old.
+                </p>
+            </div>
+        </div>
+    </div>
 </template>
 
 
@@ -177,7 +174,8 @@
     display: flex;
     /* 改为顶部对齐 */
     flex-wrap: wrap;
-    gap:20px;
+    flex-direction: row;
+    gap: 20px;
     padding: 10px;
     margin-top: 100px;
     /* 给容器上方留点空间 */
@@ -188,7 +186,7 @@
     position: relative;
     max-width: 300px;
     border-radius: 20px;
-    height: 215px;
+    height: 200px;
     background: rgba(255, 255, 255, 1);
     margin: 10px 10px;
     padding: 20px 15px;
@@ -201,7 +199,7 @@
 
 .container .card:hover {
     height: 420px;
-    
+
 }
 
 .container .card .imgBx {
@@ -245,5 +243,29 @@
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
+}
+
+@media(max-width: 800px) {
+
+    .container .card {
+        width: 210px;
+        height: 140px;
+    }
+
+
+    .container .card:hover {
+        height: 196px;
+    }
+
+    .container .card .imgBx {
+        width: 168px;
+        height: 168px;
+    }
+
+    .container .card .imgBx img {
+
+        width: 182px;
+        height: 182px;
+    }
 }
 </style>

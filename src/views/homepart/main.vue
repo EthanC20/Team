@@ -47,4 +47,10 @@ watch(typedStrings, (newValue) => {
   width: 100%;
   margin-top: 70px;
 }
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .content {
+    font-size: 3rem;
+  }
+}
 </style>
