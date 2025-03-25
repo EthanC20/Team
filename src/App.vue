@@ -4,11 +4,7 @@
 
 <template>
   <div class="router-view-wrapper" v-cloak>
-    <video autoplay loop muted playsinline class="background-video">
-      <source src="@/assets/bg/bg.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
+   
     <router-view v-slot="{ Component }">
       <transition name="scale-slide" mode="in-out">
         <component :is="Component" />
@@ -41,7 +37,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #f0f8ff;
+  background-color: #0a0a0a;
   /* 避免空白时的背景 */
 }
 

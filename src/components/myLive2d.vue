@@ -17,7 +17,8 @@
       return {
         direction: 'right',
         style: 'position: fixed; bottom: 0; left: 0; z-index: 10; margin-left: 20px;',
-        size: 200, // 默认大小
+        size: 0, 
+        //目前存在live2d和粒子特效互相影响的情况，先这样隐藏
         tips: {
           mouseover: [{
             selector: '.vue-live2d',
@@ -28,7 +29,7 @@
     },
     created() {
       this.tips = this.customTips;
-      this.updateSize(); // 初始化时设置大小
+      //this.updateSize(); // 初始化时设置大小
       window.addEventListener('resize', this.updateSize); // 监听窗口大小变化
     },
     methods: {

@@ -15,23 +15,31 @@ import {
         <div> <img class="logo" src="@/assets/bg/webicon.png" /> </div>
         <div class="logo">Del0n1x</div>
         <li class="menu-item current">
-          <router-link to="/">
+          <router-link to="/" active-class="active-menu">
             <span class="mask mask-top">Home</span>
             <span class="mask mask-bottom">Home</span>
           </router-link>
         </li>
-        <li class="menu-item member">
-          <router-link to="/mem">
+        <li class="menu-item member" >
+          <router-link to="/mem" active-class="active-menu">
             <span class="mask mask-top">Members</span>
             <span class="mask mask-bottom">Members</span>
           </router-link>
         </li>
         <li class="menu-item awards">
-          <router-link to="/awards">
+          <router-link to="/awards"  active-class="active-menu">
             <span class="mask mask-top">Awards</span>
             <span class="mask mask-bottom">Awards</span>
           </router-link>
         </li>
+
+        <li class="menu-item Wp">
+          <a target="_blank" href="https://drive.del0n1x.com/">
+            <span class="mask mask-top">Tools</span>
+            <span class="mask mask-bottom">Tools</span>
+          </a>
+        </li>
+
         <li class="menu-item Wp">
           <a target="_blank" href="https://www.yuque.com/keyboard-ovrmx/scxvuu">
             <span class="mask mask-top">WriteUp</span>
@@ -129,4 +137,10 @@ import {
   /* 确保 logo 在菜单项垂直居中 */
   color: rgb(38, 238, 225);
 }
+
+.active-menu {
+  font-weight: bold;
+  border-bottom: 4px solid #26eee1;
+}
+
 </style>

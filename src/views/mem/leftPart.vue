@@ -137,7 +137,6 @@
                 </div>
             </div>
         </div>
-        <MyLive2d></MyLive2d>
     </body>
 </template>
 
