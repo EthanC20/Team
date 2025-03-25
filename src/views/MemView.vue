@@ -2,7 +2,7 @@
 import FooterVue from '../components/footer.vue';
 import HeaderVue from '../components/header.vue';
 import MyLive2d from '../components/myLive2d.vue';
-import FlingLine from '../components/FlingLine.vue';
+import flingLine from '../components/flingLine.vue';
 import LeftPart from './mem/leftPart.vue';
 import RightPart from './mem/rightPart.vue';
 </script>
@@ -15,7 +15,7 @@ import RightPart from './mem/rightPart.vue';
       <LeftPart class="left-part" />
       <RightPart class="right-part" />
     </div>
-    <FlingLine />
+    <flingLine />
     <FooterVue class="footer" />
   </div>
 </template>
