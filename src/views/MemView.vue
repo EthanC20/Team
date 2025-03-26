@@ -1,22 +1,17 @@
 <script setup>
-import FooterVue from '../components/footer.vue';
-import HeaderVue from '../components/header.vue';
-import MyLive2d from '../components/myLive2d.vue';
 import flingLine from '../components/flingLine.vue';
 import LeftPart from './mem/leftPart.vue';
 import RightPart from './mem/rightPart.vue';
 </script>
 
 <template>
-  <MyLive2d />
+
   <div class="app-container">
-    <HeaderVue class="header" />
+    <flingLine />
     <div class="main-content">
       <LeftPart class="left-part" />
       <RightPart class="right-part" />
     </div>
-    <flingLine />
-    <FooterVue class="footer" />
   </div>
 </template>
 
@@ -27,24 +22,28 @@ import RightPart from './mem/rightPart.vue';
   min-height: 100vh;
 }
 
-.header, .footer {
-  flex-shrink: 0;
-}
+
 
 .main-content {
+  margin-top:100px;
   flex: 1;
   display: flex;
-  min-height: 0; /* 关键：允许内容区域收缩 */
+  min-height: 0;
+  /* 关键：允许内容区域收缩 */
 }
 
 .left-part {
   flex: 0 0 62%;
-  overflow: auto; /* 内容超出时滚动 */
+  overflow: auto;
+  /* 内容超出时滚动 */
 }
 
 .right-part {
+  
+  padding-right: 20px;
   flex: 0 0 38%;
   overflow: auto;
+  
 }
 
 /* 响应式设计 */
@@ -52,7 +51,9 @@ import RightPart from './mem/rightPart.vue';
   .main-content {
     flex-direction: column;
   }
-  .left-part, .right-part {
+
+  .left-part,
+  .right-part {
     flex: 1 1 100%;
   }
 }

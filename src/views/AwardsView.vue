@@ -1,35 +1,21 @@
 <script setup>
-import FooterVue from '../components/footer.vue';
-import HeaderVue from '../components/header.vue';
-import MyLive2d from '../components/myLive2d.vue';
 import flingLine from '../components/flingLine.vue';
-
 import MainVue from './awards/main.vue';
 </script>
 
 <template>
-  <MyLive2d></MyLive2d>
+  
   <div class="container">
-    <!-- 视频背景 -->
-
-    <!-- 内容 -->
+    <flingLine />
     <div class="content">
-      <!-- 头部 -->
-      <HeaderVue class="header"></HeaderVue>
-      <!-- 主体 -->
       <el-main>
         <MainVue class="body"></MainVue>
-        <flingLine/>
-
       </el-main>
-      <!-- 底部 -->
-      <FooterVue class="footer"></FooterVue>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 .container {
   position: relative;
   height: 100vh;
@@ -38,6 +24,7 @@ import MainVue from './awards/main.vue';
   flex-direction: column;
   overflow: hidden;
 }
+
 /* 内容样式 */
 
 
@@ -50,18 +37,8 @@ el-main {
   /* 保证内容居中对齐时有效 */
 }
 
-/* Header 样式 */
-.header {
-  flex: 0 0 auto;
-  /* 头部固定高度 */
-  background-color: transparent;
-  height: 60px;
+.body {
+  margin-top: 80px;
 }
 
-/* Footer 样式 */
-.footer {
-  flex: 0 0 auto;
-  background-color: transparent;
-  height: 60px;
-}
 </style>

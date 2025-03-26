@@ -1,17 +1,18 @@
 <template>
     <div class="card">
-        <div class="imgBx">
+        <div class="imgBx" loading="lazy" :alt="avatar">
             <img :src="member.avatarUrl" />
         </div>
         <div class="content">
             <h2>{{ member.nickname }}</h2>
-            <h3>{{ member.major }}</h3>
+            <h3>主攻方向：{{ member.major }}</h3>
             <div class="link">
                 <a target="_blank" :href="member.blogUrl" class="github">
                     <img :src="member.blogType === 'github' ? blogImg2 :  blogImg1" width="28px" height="28px" />
                 </a>
             </div>
             <p class="paragraph">
+                祂想说:
                 {{ member.paragraph }}
             </p>
         </div>
@@ -161,6 +162,7 @@ export default {
 }
 
 .paragraph {
+    text-align: left;
     width: 300px;
 }
 

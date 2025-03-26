@@ -22,7 +22,7 @@
                     </a>
                 </div>
                 <!-- 简介 -->
-                <p>
+                <p style="text-align: left;">
                     Formerly known as Blair, 27 years old. Favorite food is apples and I
                     hate bugs.
                 </p>
@@ -40,10 +40,15 @@
 
 
 <script>
-import MemberCard from '../../components/MemberCard.vue';
+//import MemberCard from '../../components/MemberCard.vue';
+import { defineAsyncComponent } from 'vue'
 
 export default {
-  components: { MemberCard },
+  components: { 
+    MemberCard: defineAsyncComponent(() => 
+      import('../../components/MemberCard.vue')
+    )
+   },
   props: {
     title: {
       type: String,
@@ -57,7 +62,7 @@ export default {
   },
   async created() {
     try {
-      const response = await fetch('../../data/members.json');
+      const response = await fetch('/members.json');
       this.members = await response.json();
     } catch (error) {
       console.error('加载成员数据失败:', error);

@@ -31,7 +31,7 @@ import { ElTooltip } from "element-plus";
   height: 60px;
   padding-right: 40px;
   z-index: 999;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right:0;
 }

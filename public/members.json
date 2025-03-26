@@ -1,0 +1,42 @@
+[
+  {
+    "nickname": "EthanC20",
+    "avatarUrl": "/img/EthanC20.png",
+    "major": "AI",
+    "paragraph": "The limits of my language mean the limits of my world. — Ludwig Wittgenstein",
+    "blogUrl": "https://github.com/EthanC20",
+    "blogType": "github"
+  },
+  {
+    "nickname": "SinzoL",
+    "avatarUrl": "/img/SinzoL.png",
+    "major": "Crypto",
+    "paragraph": "学了一年的密码，打了半年的比赛，啥也不会。",
+    "blogUrl": "https://github.com/SinzoL",
+    "blogType": "github"
+  },
+  {
+    "nickname": "oldKingOK",
+    "avatarUrl": "/img/oldKingOK.png",
+    "major": "Reverse",
+    "paragraph": "学无止境",
+    "blogUrl": "https://github.com/oldkingOK",
+    "blogType": "github"
+  },
+  {
+    "nickname": "wang",
+    "avatarUrl": "/img/wang.png",
+    "major": "Web",
+    "paragraph": "学无止境",
+    "blogUrl": "https://github.com/king-wang123",
+    "blogType": "github"
+  },
+  {
+    "nickname": "Ya0rk",
+    "avatarUrl": "/img/Yao.png",
+    "major": "Pwn",
+    "paragraph": "pwn pwn pwn!",
+    "blogUrl": " https://github.com/Ya0rk?tab=repositories",
+    "blogType": "github"
+  }
+]

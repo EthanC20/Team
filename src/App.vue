@@ -4,7 +4,6 @@
 
 <template>
   <div class="router-view-wrapper" v-cloak>
-   
     <router-view v-slot="{ Component }">
       <transition name="scale-slide" mode="in-out">
         <component :is="Component" />
@@ -18,20 +17,6 @@
 [v-cloak] {
   display: none;
 }
-
-/* 视频背景样式 */
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* 确保视频覆盖整个背景 */
-  z-index: 0;
-  /* 使视频在内容后面 */
-}
-
 .router-view-wrapper {
   position: relative;
   width: 100%;

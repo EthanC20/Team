@@ -1,27 +1,18 @@
 <script setup>
-import FooterVue from '../components/footer.vue';
-import HeaderVue from '../components/header.vue';
-import MyLive2d from '../components/myLive2d.vue';
 import flingLine from '../components/flingLine.vue';
 
 import MainVue from './homepart/main.vue';
 </script>
 
 <template>
-  <MyLive2d></MyLive2d>
+
 
   <div class="container">
-    <!-- 内容部分 -->
+    <flingLine />
     <div class="content">
-      <!-- 头部 -->
-      <HeaderVue class="header"></HeaderVue>
-      <!-- 主体 -->
       <el-main>
         <MainVue class="body"></MainVue>
-        <flingLine/>
       </el-main>
-      <!-- 底部 -->
-      <FooterVue class="footer"></FooterVue>
     </div>
   </div>
 </template>
@@ -45,23 +36,9 @@ body {
 }
 
 
-
-/* Header 样式 */
-.header {
-  flex: 0 0 auto;
-  background-color: transparent;
-  height: 60px;
-}
-
-/* Footer 样式 */
-.footer {
-  flex: 0 0 auto;
-  background-color: transparent;
-  height: 60px;
-}
-
 /* 主体样式 */
 .body {
+  margin-top: 100px;
   flex: 1;
   position: relative;
 }
