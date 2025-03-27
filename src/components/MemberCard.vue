@@ -10,10 +10,13 @@
                 <a target="_blank" :href="member.blogUrl" class="github">
                     <img :src="member.blogType === 'github' ? blogImg2 :  blogImg1" width="28px" height="28px" />
                 </a>
+                <a v-if="member.blogType2" target="_blank" :href="member.blogUrl2" class="github">
+                    <img :src="member.blogType2 === 'github' ? blogImg2 :  blogImg1" width="28px" height="28px" />
+                </a>
             </div>
+
             <p class="paragraph">
-                祂想说:
-                {{ member.paragraph }}
+               Slogan: {{ member.paragraph }}
             </p>
         </div>
     </div>

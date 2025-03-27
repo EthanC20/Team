@@ -1,34 +1,5 @@
 <template>
     <div class="container">
-        <!-- 这里放队员名片 -->
-        <div class="card">
-            <div class="imgBx">
-                <img src="@/assets/avatar/img1.jpg" />
-            </div>
-            <div class="content">
-                <!-- // 花名 -->
-                <h2>Joel Forger</h2>
-                <h3>Crypto</h3>
-                <!-- github 或者 blog 链接 -->
-                <div class="link">
-                    <a target="_blank" href="https://space.bilibili.com/3546725136468673?spm_id_from=333.1007.0.0"
-                        class="github">
-                        <img src="../../assets/bg/github.png" width="28px" height="28px" />
-                    </a>
-
-                    <a target="_blank" href="https://space.bilibili.com/3546725136468673?spm_id_from=333.1007.0.0"
-                        class="blog">
-                        <img src="../../assets/bg/blog.png" width="28px" height="28px" />
-                    </a>
-                </div>
-                <!-- 简介 -->
-                <p style="text-align: left;">
-                    Formerly known as Blair, 27 years old. Favorite food is apples and I
-                    hate bugs.
-                </p>
-            </div>
-        </div>
-
         <MemberCard 
         v-for="(member, index) in members" 
         :key="index" 

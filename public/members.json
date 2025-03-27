@@ -1,4 +1,15 @@
 [
+  
+  {
+    "nickname": "keyboard",
+    "avatarUrl": "/img/keyboard.png",
+    "major": "pwn",
+    "paragraph": "a cool pwner!",
+    "blogUrl": " https://github.com/MUZIHIT",
+    "blogType": "github",
+    "blogUrl2": "https://muzihit.github.io/",
+    "blogType2": "blog"
+  },
   {
     "nickname": "EthanC20",
     "avatarUrl": "/img/EthanC20.png",
@@ -6,6 +17,34 @@
     "paragraph": "The limits of my language mean the limits of my world. — Ludwig Wittgenstein",
     "blogUrl": "https://github.com/EthanC20",
     "blogType": "github"
+  },
+  {
+    "nickname": "Swizzer",
+    "avatarUrl": "/img/Swizzer.png",
+    "major": "Crypto & Misc",
+    "paragraph": "No, thank you!",
+    "blogUrl": " https://github.com/Swizzzer",
+    "blogType": "github",
+    "blogUrl2": "http://eupho.me/",
+    "blogType2": "blog"
+  },
+  {
+    "nickname": "cheng_xing",
+    "avatarUrl": "/img/cheng_xing.png",
+    "major": "web, misc, isw",
+    "paragraph": "思考中",
+    "blogUrl": " https://github.com/sakuraraindrop",
+    "blogType": "github"
+  },
+  {
+    "nickname": "Ya0rk",
+    "avatarUrl": "/img/Ya0rk.png",
+    "major": "Pwn",
+    "paragraph": "pwn pwn pwn!",
+    "blogUrl": " https://github.com/Ya0rk?tab=repositories",
+    "blogType": "github",
+    "blogUrl2": "https://ya0rk.github.io/",
+    "blogType2": "blog"
   },
   {
     "nickname": "SinzoL",
@@ -19,24 +58,18 @@
     "nickname": "oldKingOK",
     "avatarUrl": "/img/oldKingOK.png",
     "major": "Reverse",
-    "paragraph": "学无止境",
+    "paragraph": "学无止境！",
     "blogUrl": "https://github.com/oldkingOK",
-    "blogType": "github"
+    "blogType": "github",
+    "blogUrl2": "https://oldkingok.cc/",
+    "blogType2": "blog"
   },
   {
     "nickname": "wang",
     "avatarUrl": "/img/wang.png",
     "major": "Web",
-    "paragraph": "学无止境",
+    "paragraph": "思考中",
     "blogUrl": "https://github.com/king-wang123",
-    "blogType": "github"
-  },
-  {
-    "nickname": "Ya0rk",
-    "avatarUrl": "/img/Yao.png",
-    "major": "Pwn",
-    "paragraph": "pwn pwn pwn!",
-    "blogUrl": " https://github.com/Ya0rk?tab=repositories",
     "blogType": "github"
   }
 ]

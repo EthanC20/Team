@@ -34,16 +34,15 @@ import RightPart from './mem/rightPart.vue';
 
 .left-part {
   flex: 0 0 62%;
-  overflow: auto;
-  /* 内容超出时滚动 */
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .right-part {
-  
   padding-right: 20px;
   flex: 0 0 38%;
-  overflow: auto;
-  
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 /* 响应式设计 */
