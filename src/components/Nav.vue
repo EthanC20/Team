@@ -85,7 +85,7 @@
 .mask {
     font-size: 28px;
     display: block;
-    font-family: 'Soufont';
+    font-family: 'Gohu';
     position: absolute;
     width: 100%;
     top: 0;
@@ -95,7 +95,7 @@
     /* 防止换行 */
     text-overflow: ellipsis;
     /* 超出部分用省略号表示 */
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition: opacity 1.0s ease, transform 1.0s ease;
     /* 添加平滑过渡 */
 }
 
@@ -125,7 +125,7 @@
 }
 
 .logo {
-    font-family: 'Soufont';
+    font-family: 'JetBrains Mono';
     font-size: 28px;
     margin-left: 20px;
     display: inline-block;

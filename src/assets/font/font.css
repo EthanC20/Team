@@ -18,3 +18,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./JetBrainsMonoNerdFont-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gohu';
+    src: url('./GohuFont14NerdFont-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
