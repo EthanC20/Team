@@ -16,7 +16,7 @@
             </div>
 
             <p class="paragraph">
-               Slogan: {{ member.paragraph }}
+               {{ member.paragraph }}
             </p>
         </div>
     </div>
