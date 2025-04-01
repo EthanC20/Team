@@ -4,7 +4,7 @@
       <div class="content">
         <span class="static-text">A CTF Team From HITsz</span>
         <!-- 使用 v-html 渲染带有 HTML 的字符串 -->
-        <vuetyped :strings="typedStrings" :showCursor="false" :typeSpeed="30" :loop="true">
+        <vuetyped :strings="typedStrings" :showCursor="false" :typeSpeed="40" :backSpeed="40" :backDelay="1500" :loop="true">
           <span class="typing" v-html="currentTypedText"></span>
         </vuetyped>
       </div>
@@ -47,6 +47,7 @@ watch(typedStrings, (newValue) => {
   text-align: center;
   width: 100%;
   margin-top: 70px;
+  
 }
 /* 移动端适配 */
 @media (max-width: 768px) {

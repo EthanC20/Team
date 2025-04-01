@@ -57,7 +57,7 @@ const particlesLoaded = async container => {
           enable: true,
           outModes: 'bounce',
           random: false,
-          speed: 4,
+          speed: 2,
           straight: false
         },
         number: {
