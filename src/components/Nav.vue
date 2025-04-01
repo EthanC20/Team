@@ -95,8 +95,29 @@
     /* 防止换行 */
     text-overflow: ellipsis;
     /* 超出部分用省略号表示 */
-    transition: opacity 1.0s ease, transform 1.0s ease;
+    transition: all 1.0s cubic-bezier(0.475, 0.885, 0.32, 1.275); /* 弹性过渡效果 */
     /* 添加平滑过渡 */
+}
+.menu-item a:hover .mask {
+    animation: bounce 0.8s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    30% {
+        transform: translateY(-15px) scale(1.1);
+    }
+    50% {
+        transform: translateY(0) scale(1);
+    }
+    70% {
+        transform: translateY(-7px) scale(1.05);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* mask-top 默认显示，mask-bottom 默认隐藏 */
