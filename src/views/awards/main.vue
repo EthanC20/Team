@@ -16,7 +16,9 @@
   
   <script setup>
   const competitions = [
-    { name: "2025 CISCN x CCB", rank: "Rank: 127" },
+    { name: "2025 数字中国创新大赛 数字安全赛道 华南赛区初赛", rank: "Rank: 1" },
+    { name: "2025 CISCN x CCB 华南分区决赛", rank: "Rank: 10" },
+    { name: "2025 CISCN x CCB 初赛", rank: "Rank: 127" },
     { name: "2024 niteCTF", rank: "Rank: 23/1174" },
     { name: "2024 鹏城杯", rank: "初赛排名 60\n决赛——攻击排名：32/60\n决赛——防御排名：8/60" },
     { name: "2024 长城杯", rank: "Rank: 38 (获得决赛资格（没去线下赛唉唉）)" },
