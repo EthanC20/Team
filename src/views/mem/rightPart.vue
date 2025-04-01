@@ -24,7 +24,7 @@ export default {
 <style scoped>
 .rightPart {
     margin-top: 100px;
-    display: grid;
+    display: flex;
     /* 启用 Grid 布局 */
     grid-template-columns: auto 1fr;
     /* 图片占据自动宽度，文字占据剩余空间 */
@@ -38,7 +38,7 @@ export default {
     color: rgb(97, 135, 218);
     font-size: 30px;
     margin: 0;
-    border: 2px solid #ccc;
+    border: 0px solid #ccc;
     margin-right: 20px;;
     /* 去除默认的段落边距 */
 }

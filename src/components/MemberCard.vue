@@ -126,7 +126,7 @@ export default {
     width: 240px;
     height: 240px;
     top: -60px;
-    left: 20px;
+    left: 30px;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -134,8 +134,8 @@ export default {
 /* 头像大小 */
 .card .imgBx img {
     /*max-width: 100%;*/
-    height: 260px;
-    width: 260px;
+    height: 240px;
+    width: 240px;
     border-radius: 50%;
     object-fit: cover;
     /* 保持图片比例，防止变形 */
