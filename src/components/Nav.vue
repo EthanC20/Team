@@ -101,7 +101,7 @@
 .menu-item a:hover .mask {
     animation: bounce 0.8s;
 }
-
+/* TODO: 抖动检测 */
 @keyframes bounce {
     0% {
         transform: translateY(0) scale(1);
