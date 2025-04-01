@@ -74,58 +74,57 @@ async created() {
 }
 
 .container {
-  display: flex;
-  /* 改为顶部对齐 */
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 20px;
-  padding: 96px;
-  margin-top: 5px;
-  /* 给容器上方留点空间 */
-  /* 为毛玻璃效果添加背景 */
-  /* background: rgba(255, 255, 255, 0.1); */
+    display: flex;
+    /* 改为顶部对齐 */
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-right: 0px;
+    margin-top: 65px;
+    /* 给容器上方留点空间 */
 }
 
 .container .card {
-  position: relative;
-  max-width: 300px;
-  border-radius: 20px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
-  margin: 10px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
-  z-index: 2;
-  backdrop-filter: blur(10px);
-  border: 0px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    max-width: 300px;
+    border-radius: 20px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    margin: 10px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 .container .card:hover {
-  height: 420px;
-  background: rgba(255, 255, 255, 1); /* 悬停时更亮 */
+    height: 420px;
+    background: rgba(255, 255, 255, 1); /* 悬停时更亮 */
 }
 
 .container .card .imgBx {
-  position: relative;
-  width: 240px;
-  height: 240px;
-  top: -60px;
-  left: 30px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 240px;
+    height: 240px;
+    top: -60px;
+    left: 30px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* 头像大小 */
 .container .card .imgBx img {
-  /*max-width: 100%;*/
-  height: 260px;
-  width: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  /* 保持图片比例，防止变形 */
+    /*max-width: 100%;*/
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* 保持图片比例，防止变形 */
 }
 
 .imgBx:hover {

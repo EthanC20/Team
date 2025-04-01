@@ -38,7 +38,7 @@ export default {
     color: rgb(97, 135, 218);
     font-size: 30px;
     margin: 0;
-    border: 0px solid #ccc;
+    /* border: 2px solid #ccc; */
     margin-right: 20px;;
     /* 去除默认的段落边距 */
 }
