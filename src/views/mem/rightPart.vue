@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .rightPart {
-    margin-top: 4%;
+    margin-top: 3.5%;
     display: grid;
     /* 启用 Grid 布局 */
     grid-template-columns: auto 1fr;
