@@ -82,7 +82,7 @@ async created() {
     padding: 20px;
     padding-top: 30px;
     padding-right: 0px;
-    margin-top: 65px;
+    margin-top: 2%;
     /* 给容器上方留点空间 */
 }
 
