@@ -41,6 +41,7 @@ watch(typedStrings, (newValue) => {
 
 /* 打印的文本居中，并且加粗 */
 .typing {
+  font-family: "Fira";
   font-weight: bold;
   display: inline-block;
   text-align: center;
