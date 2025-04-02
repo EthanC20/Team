@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .rightPart {
-    margin-top: 100px;
+    margin-top: 3.5%;
     display: grid;
     /* 启用 Grid 布局 */
     grid-template-columns: auto 1fr;
@@ -38,8 +38,8 @@ export default {
     color: rgb(97, 135, 218);
     font-size: 30px;
     margin: 0;
-    border: 2px solid #ccc;
-    margin-right: 20px;;
+    /* border: 2px solid #ccc; */
+    margin-right: 3%;
     /* 去除默认的段落边距 */
 }
 </style>
